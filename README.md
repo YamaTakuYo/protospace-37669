@@ -10,6 +10,7 @@
 |occupation | text   |null: false |
 |position   | text   |null: false |
 ## Association
+
 has_many :prototypes
 has_many :comments
 
@@ -21,6 +22,7 @@ has_many :comments
 |concept    | text       | null: false                    |
 |user       | references | null: false, foreign_key: true |
 ## Association
+
 belongs_to :user
 has_many :comments
 
@@ -31,5 +33,6 @@ has_many :comments
 |user      | references | null: false, foreign_key: true |
 |prototype | references | null: false, foreign_key: true |
 ## Association
+
 belongs_to :user
 belongs_to :prototype
